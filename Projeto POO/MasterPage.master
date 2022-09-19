@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Viasoft Korp</title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <nav class="navbar navbar-expand-lg" style="background-color: #2b485a;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="color: #ffFFFF">Korp ERP</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#" style="color: #ff0c46">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="CadastroPessoa.aspx" style="color: #ff0c46">Cadastrar Cliente</a>
+        </li>
+
+           <li class="nav-item">
+          <a class="nav-link" href="CadastroFuncionario.aspx" style="color: #ff0c46">Cadastrar Funcionário</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #ff0c46">
+            Saiba Mais
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Módulos</a></li>
+            <li><a class="dropdown-item" href="#">Segmentos</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Fale com um especialista</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" style="color: rgba(255, 12, 70, 0.70)">Em breve</a>
+        </li>
+      </ul>
+     
+    </div>
+  </div>
+</nav>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+                       
+    </form>
+    <script src="Scripts/bootstrap.bundle.min.js"></script>
+</body>
+</html>
